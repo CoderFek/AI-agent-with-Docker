@@ -14,3 +14,8 @@
 - docker compose up
 - docker compose down
 - docker compose build
+
+## Other docker compose commands
+
+- docker compose run app /bin/slash
+- docker compose up --build

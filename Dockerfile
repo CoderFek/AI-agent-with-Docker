@@ -4,4 +4,7 @@ FROM python:3.13.5-slim-bullseye
 
 WORKDIR /app
 
-RUN echo "hello" > index.html
+COPY ./static_html .
+
+# RUN echo "hello" > index.html
+
