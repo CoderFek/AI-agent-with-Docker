@@ -1,0 +1,9 @@
+services: #list of services
+  app: #custom key name
+    build:
+      context: . #where you want to build
+      dockerfile: Dockerfile   #your docker file
+    ports:
+      - 8000:8000 #port mapping
+      - 3000:8000
+    command: python -m http.server 8000
