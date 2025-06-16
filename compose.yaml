@@ -1,8 +1,8 @@
 services: #list of services
-  app: #custom key name
+  static_html: #custom key name
     build:
-      context: . #where you want to build
-      dockerfile: Dockerfile   #your docker file
+      context: ./static_html #where you want to build
+      dockerfile: static.Dockerfile   #your docker file
     ports:
       - 8000:8000 #port mapping
       - 3000:8000
