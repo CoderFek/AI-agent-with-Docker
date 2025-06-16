@@ -1,4 +1,13 @@
 services: #list of services
+  backend: #custom key name
+    build:
+      context: ./backend #where you want to build
+      dockerfile: Dockerfile   #your docker file
+    ports:
+      - 8080:8000 #port mapping
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - ./backend/src:/app
   static_html: #custom key name
     build:
       context: ./static_html #where you want to build

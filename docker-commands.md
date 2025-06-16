@@ -17,5 +17,5 @@
 
 ## Other docker compose commands
 
-- docker compose run app /bin/slash
+- docker compose run app /bin/bash
 - docker compose up --build
