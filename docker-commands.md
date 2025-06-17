@@ -17,5 +17,6 @@
 
 ## Other docker compose commands
 
-- docker compose run app /bin/bash
+- docker compose run app_name /bin/bash
 - docker compose up --build
+- dcoker compose up --watch

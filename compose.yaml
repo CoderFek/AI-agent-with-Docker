@@ -8,6 +8,14 @@ services: #list of services
     command: uvicorn main:app --host 0.0.0.0 --port 8000
     volumes:
       - ./backend/src:/app
+    develop:
+      watch:
+        - action: rebuild
+          path: ./backend/requirements.txt
+        - action: rebuild
+          path: ./backend/Dockerfile
+        - action: restart
+          path: ./backend/src
   static_html: #custom key name
     build:
       context: ./static_html #where you want to build
