@@ -18,6 +18,4 @@ RUN pip install -r /tmp/requirements.txt
 # COPY local_file conatiner_destination
 COPY ./src .
 
-RUN pip install -r /tmp/requirements.txt
-
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
