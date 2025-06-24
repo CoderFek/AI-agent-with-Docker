@@ -1,4 +1,5 @@
 from sqlmodel import SQLModel, Field
+from pydantic import BaseModel
 
 class ChatMessagePayload(BaseModel):
     # pydantic model
