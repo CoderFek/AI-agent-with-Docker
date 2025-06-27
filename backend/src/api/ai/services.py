@@ -9,7 +9,7 @@ def generate_email_message(query:str) -> EmailMessageSchema:
     messages = [
         (
             "system",
-            "You are a helpful assistant for research and composing plaintext emails. Structure your response like this: {\"subject\": \"...\", \"contexts\": \"...\", \"invalid_request\": false}. Your reply must be pure JSON.",
+            "You are a helpful assistant for writing high-quality plaintext research summaries in the form of email messages. Your responses should be well-structured, human-readable, and informative. Do not use markdown or formatting like *, #, or backticks. Structure your output exactly as: {\"subject\": \"...\", \"contexts\": \"...\", \"invalid_request\": false}. Do not explain anything outside the JSON. Reply with pure JSON only.",
 
         ),
         (

@@ -25,7 +25,7 @@ def chat_list_messages(session: Session = Depends(get_session)):
 # HTTP post -> payload = {'message': 'Hello, world!'}
 # curl -X POST http://localhost:8080/api/chats/ -H "Content-Type: application/json" -d '{"message": "Hello, world!"}'
 
-# curl -X POST http://localhost:8080/api/chats/ -H "Content-Type: application/json" -d '{"message": "Give me a summary of why it is good to go outside"}'
+# curl -X POST https://ai-agent-with-docker.onrender.com/api/chats/ -H "Content-Type: application/json" -d '{"message": "Give me a summary of why it is good to go outside"}'
 
 @router.post("/", response_model=EmailMessageSchema)
 def chat_create_message(
