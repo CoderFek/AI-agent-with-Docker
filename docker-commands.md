@@ -28,7 +28,7 @@ For terminal
 curl http://localhost:12434/engines/v1/chat/completions \
  -H "Content-Type: application/json" \
  -d '{
-        "model": "ai/smollm2",
+        "model": "ai/gemma3",
         "messages": [
                 {
                         "role": "system",
@@ -48,7 +48,7 @@ For container
 curl http://model-runner.docker.internal/engines/v1/chat/completions \
  -H "Content-Type: application/json" \
  -d '{
-        "model": "ai/smollm2",
+        "model": "ai/gemma3",
         "messages": [
                 {
                         "role": "system",
